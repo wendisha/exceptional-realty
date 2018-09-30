@@ -20,6 +20,10 @@ figcaption {
   text-align: right; 
 }
 
+figure {
+  margin: 0 0 10px;
+}
+
 .milk-text {
   font: bold 2.6em "Elsie Swash Caps", cursive;
   color: white;
@@ -138,6 +142,22 @@ img, video, audio, iframe, table, form {
 }
 
 
+/* Sections */
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: #fff;
+  z-index: 1;
+}
+
+section {
+  padding: 30px;
+  margin-bottom: 20px;
+  background-color: white;
+}
+
 /* Details */
 #details div {
   height: 221px;
@@ -161,18 +181,3 @@ img, video, audio, iframe, table, form {
 /* Footer */
 
 
-/* SECTIONS */
-header {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  background: #fff;
-  z-index: 1;
-}
-
-section {
-  padding: 30px;
-  margin-bottom: 20px;
-  background-color: white;
-}
