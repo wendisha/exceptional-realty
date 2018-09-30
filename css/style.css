@@ -212,7 +212,6 @@ img, video, audio, iframe, table, form {
 /* Header */
 header {
   margin: 0 0 30px;
-
 }
 
 
@@ -224,7 +223,7 @@ header {
   width: 100%;
   z-index: 2;
   border-bottom: 1px solid #ccc;
-  text-align: center
+  text-align: center;
 }
 
 #navbar nav {
