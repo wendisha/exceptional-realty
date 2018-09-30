@@ -1,9 +1,14 @@
 @import url(http://fonts.googleapis.com/css?family=Elsie+Swash+Caps:400,900); 
 @import url(http://fonts.googleapis.com/css?family=Clicker+Script); 
 
-p {font-size: 1em;
-  line-height: 1.5em;
+/* Global Styles*/
+h3 {
+  margin: 0 0 10px;
 }
+
+p {font-size: 1em; /* Same as: 16px, ?pt, 100% */
+  line-height: 1.5em;
+} 
 
 figcaption {
   /*font-weight: normal;
@@ -21,16 +26,116 @@ figcaption {
   text-shadow: 0 2px 3px #000;
 }
 
-#logo {
+.shadow {
+  box-shadow: 0 3px 10px #333;
+}
+
+.border-right {
+  border-right: 1px dotted #ccc;
+}
+
+
+/* Backgrounds */
+
+
+/* Media */
+img, video, audio, iframe, table, form {
+  width: 100%; /* IE */
+  max-width: 100%; /* FF, Safari, Chrome */
+}
+
+
+/* Fixes */
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.clearfix:after {
+  content: ".";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  height: 0;
+  line-height: 0;
+}
+
+.clear {
+  clear:both;
+}
+
+
+/* Layout */
+.wrapper {
+  width: 960px;
+  margin: 0 auto;
 
 }
 
+.col-1 {
+  float: left;
+  width: 32%;
+
+}
+
+.col-2 {
+  float: left;
+  width: 66%;
+
+}
+
+.col-3 {
+
+}
+
+[class*="col-"] {
+  margin-left: 2%
+}
+
+.first {
+  margin-left: 0%
+}
+
+
+/* Social */
+#social {
+  position: fixed;
+  top: 200px;
+  right: 20px;
+  width: 40px;
+  z-index: 1;
+}
+
+#social a {
+  display: block;
+  width: 40px;
+  height: 40px;
+  background: yellow;
+}
+
+
+/* Header */
+
+
+
+/* Navbar */
+
+
+
+/* Logo */
 #logo h1 {
   font-family: "Clicker Script", cursive;
 }
 
 #logo h2 {
   font-family: "Elsie Swash Caps", cursive;
+}
+
+
+/* Details */
+#details div {
+  height: 221px;
 }
 
 #details a:link, #details a:visited {
@@ -47,61 +152,9 @@ figcaption {
   color: red;
 }
 
-/* MEDIA */
-img, video, audio {
-  max-width: 100%;
-}
 
-/* LAYOUT */
-* {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-}
-.wrapper {
-  width: 960px;
-  margin: 0 auto;
+/* Footer */
 
-}
-
-.col-1 {
-  float: left;
-  width: 32%;
-}
-
-.col-2 {
-  float: left;
-  width: 66%;
-}
-
-.col-3 {
-}
-
-.clearfix:after {
-  content: ".";
-  display: block;
-  clear: both;
-  visibility: hidden;
-  height: 0;
-  line-height: 0;
-}
-
-[class*="col-"] {
-  margin-left: 2%
-}
-
-.first {
-  margin-left: 0%
-}
-
-.shadow {
-  box-shadow: 0 3px 10px #333;
-}
-
-.border-right {
-  border-right: 1px dotted #ccc;
-  padding-right: 30px;
-}
 
 /* SECTIONS */
 header {
@@ -116,20 +169,4 @@ header {
 section {
   padding: 20px;
   margin-bottom: 20px;
-}
-
-/* SOCIAL */
-#social {
-  position: fixed;
-  top: 200px;
-  right: 20px;
-  width: 40px;
-  z-index: 1;
-}
-
-#social a {
-  display: block;
-  width: 40px;
-  height: 40px;
-  background: yellow;
 }
