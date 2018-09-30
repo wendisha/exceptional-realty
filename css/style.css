@@ -98,6 +98,11 @@ img, video, audio {
   box-shadow: 0 3px 10px #333;
 }
 
+.border-right {
+  border-right: 1px dotted #ccc;
+  padding-right: 30px;
+}
+
 /* SECTIONS */
 header {
   position: fixed;
