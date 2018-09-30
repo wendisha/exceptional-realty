@@ -67,17 +67,14 @@ img, video, audio {
 .col-1 {
   float: left;
   width: 32%;
-  background: #ccc;
 }
 
 .col-2 {
   float: left;
   width: 66%;
-  background: #ccc;
 }
 
 .col-3 {
-  background: #ccc;
 }
 
 .clearfix:after {
@@ -95,6 +92,10 @@ img, video, audio {
 
 .first {
   margin-left: 0%
+}
+
+.shadow {
+  box-shadow: 0 3px 10px #333;
 }
 
 /* SECTIONS */
