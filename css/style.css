@@ -37,7 +37,11 @@ figcaption {
 
 
 /* Backgrounds */
-
+.white-wood {
+  background: url(../images/white-wood.jpg) no-repeat center top;
+  background-size: cover;
+  
+}
 
 /* Media */
 img, video, audio, iframe, table, form {
@@ -168,6 +172,7 @@ header {
 }
 
 section {
-  padding: 20px;
+  padding: 30px;
   margin-bottom: 20px;
+  background-color: white;
 }
