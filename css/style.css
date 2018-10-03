@@ -315,6 +315,10 @@ background: linear-gradient(
 ); /* W3C */
 }
 
+#navbar nav a.menu-icon {
+  display: none;
+}
+
 
 /* Logo */
 #logo {
