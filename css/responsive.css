@@ -1,4 +1,4 @@
-/* Content will determine breakpoint */
+/* Content will determine breakpoint; each @media represents a breakpoint */
 @media only screen and (max-width: 1108px) {
   .wrapper {
     width: 90%;
@@ -13,5 +13,35 @@
   
   #social a {
     display: inline-block;
+  }
+}
+
+@media only screen and (max-width:900px) {
+  body {
+    font-size: 85%;
+  }
+  #logo h1 {
+    width: 35px;
+    height: 35px;
+  }
+  
+  #logo h2 {
+    font-size: 2.2em;
+  }
+  
+  #social {
+    top: 72;
+  }
+  
+  .col-3 p {
+    -mox-column-count: 2;
+    -webkit-column-count: 2;
+    column-count: 2;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  #navbar nav a {
+    font-size: 0.9em;
   }
 }
